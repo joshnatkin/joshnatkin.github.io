@@ -6,6 +6,10 @@ h1{
     color:black;
     text-align: center;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .assign{
     margin: 10px;
