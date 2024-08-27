@@ -28,7 +28,16 @@ border: green;
     text-decoration: none;
     background: #FF8DA1;
     color:white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
 }
+
+#main-nav a:hover{
+background: black;
+color: white;
+}
+
 
 h1{
     color: red;
