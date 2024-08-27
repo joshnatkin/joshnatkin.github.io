@@ -13,6 +13,23 @@ border: green;
 
 }
 
+#main-nav ul{
+    padding-left:0; /*removes the left padding*/
+    width: fit-content;
+    margin: auto;
+}
+
+#main-nav li{
+    list-style-type: none; /*no bullets */
+    display: inline-block;
+}
+
+#main-nav a{
+    text-decoration: none;
+    background: #FF8DA1;
+    color:white;
+}
+
 h1{
     color: red;
 }
