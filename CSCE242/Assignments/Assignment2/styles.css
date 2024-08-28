@@ -41,6 +41,30 @@ body{
 p{
     color: tan;
 }
+#beach-image1, #beach-image2 {
+    border: 3px black; 
+    padding: 5px; 
+    margin: 10px; 
+    border-radius: 8px;
+}
+
+#beach-table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+
+#beach-table caption {
+    text-align: center;
+}
+
+#beach-table th {
+    background-color: lightgray; 
+    padding: 10px; /
+
+}
+
+
 
 
 
