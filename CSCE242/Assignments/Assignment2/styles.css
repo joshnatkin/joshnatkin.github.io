@@ -2,6 +2,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background: lightblue;
 }
+#main-nav ul{
+    padding-left:0; /*removes the left padding*/
+    width: fit-content;
+    margin: auto;
+}
+
+#main-nav li{
+    list-style-type: none; /*no bullets */
+    display: inline-block;
+}
 
 #main-nav a{
     text-decoration: none;
