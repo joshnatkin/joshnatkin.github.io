@@ -57,6 +57,14 @@ p {
     height: 250px;
 }
 
+#beach-back{
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 2px;
+    border: 2px solid green;
+}
 #beach-table {
     width: 100%;
     border-collapse: collapse; 
