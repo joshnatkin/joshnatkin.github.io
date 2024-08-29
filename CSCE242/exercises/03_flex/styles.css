@@ -19,6 +19,21 @@ body{
 #main-footer{
     background-color: blueviolet;
 }
+
+#main-nav ul{
+    padding-left: 0;
+}
+
+#main-nav li{
+    list-style: none;
+}
+
+#main-nav a{
+    text-decoration: none;
+    padding: 5px;
+    background: black;
+    color: violet;
+}
 /*Navigation*/
 
 
