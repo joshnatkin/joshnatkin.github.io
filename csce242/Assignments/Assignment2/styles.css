@@ -51,7 +51,7 @@ p {
 .beach-image {
     border: 2px solid black;
     border-radius: 2px;
-    padding: 0;
+    padding: 1px;
     margin: 5px auto; 
     width: 300px;
     height: 250px;
