@@ -19,6 +19,14 @@ body{
 
 }
 
+#news section{
+    background: blueviolet;
+}
+
+#img {
+    max-width: 100%;
+}
+
 #main-header{
     background-color: skyblue;
 }

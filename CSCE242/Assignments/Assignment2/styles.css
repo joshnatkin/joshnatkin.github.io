@@ -3,7 +3,7 @@ body {
     background: lightblue;
     background-image: url(image/assingment2_beach1.jpeg);
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
