@@ -12,6 +12,13 @@ body{
 
 }
 
+#species section{
+    background: lightgreen;
+    padding :5px;
+    border-radius: 5px;
+
+}
+
 #main-header{
     background-color: skyblue;
 }
@@ -26,6 +33,7 @@ body{
 
 #main-nav li{
     list-style: none;
+
 }
 
 #main-nav a{
@@ -33,7 +41,7 @@ body{
     padding: 5px;
     background: black;
     color: blueviolet;
-    display: black;
+    display: block;
 }
 
 
@@ -50,5 +58,21 @@ body{
 @media only screen and (min-width: 600px){
     .columns{
         display: flex;
+    }
+
+    .one{
+        flex:1;
+    }
+
+    .two{
+        flex:2;
+    }
+
+    #main-nav li{
+        flex:1;
+    }
+
+    @media only screem and (minwidth: 760px){
+
     }
 }
