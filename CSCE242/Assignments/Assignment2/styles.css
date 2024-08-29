@@ -59,10 +59,11 @@ p {
 }
 
 #table-back {
-    background: white;
-    margin: 20px auto;
-    width: 70%;
-    border-radius: 2px;
+    background: white; /* White background for the div */
+    padding: 20px; /* Space inside the div, around the content */
+    margin: 20px auto; /* Space outside the div, centered horizontally */
+    width: 70%; /* Width of the div relative to the parent */
+    border-radius: 10px; /* Rounded corners */
     border: 2px solid green;
 }
 #beach-table {
