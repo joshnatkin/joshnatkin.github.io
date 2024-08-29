@@ -1,34 +1,37 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background: lightblue;
+    background-image: url(image/assingment2_beach1.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
 }
 
-#content{
+#content {
     background: white;
-    padding: 5px;
-    margin: 20px;
+    padding: 20px;
+    margin: 20px auto;
     width: 70%;
     border-radius: 10px;
-    border: green;
-    
+    border: 2px solid green;
 }
 
-#main-nav ul{
-    padding-left:0; /*removes the left padding*/
+#main-nav ul {
+    padding-left: 0; /* removes the left padding */
     width: fit-content;
     margin: auto;
 }
 
-#main-nav li{
-    list-style-type: none; /*no bullets */
+#main-nav li {
+    list-style-type: none; /* no bullets */
     display: inline-block;
 }
 
-#main-nav a{
+#main-nav a {
     text-decoration: none;
     background: darkblue;
-    color:white;
-    padding: 5px;
+    color: white;
+    padding: 10px;
     margin: 5px;
     border-radius: 2px;
 }
@@ -42,9 +45,10 @@ h1 {
     color: tan;
 }
 
-p{
+p {
     color: tan;
 }
+
 .beach-image {
     border: 2px solid black;
     padding: 10px;
@@ -57,17 +61,17 @@ p{
 #beach-table {
     width: 100%;
     border-collapse: collapse; 
+    margin: 20px 0;
 }
-
 
 #beach-table caption {
     text-align: center;
+    margin: 10px 0;
 }
 
 #beach-table th {
     background-color: lightgray; 
     padding: 10px; 
-
 }
 
 #beach-table td {
@@ -75,10 +79,3 @@ p{
     padding: 10px;
     background-color: #fafafa; 
 }
-
-
-
-
-
-    
-
