@@ -63,11 +63,11 @@ p {
     width: 100%;
     border-collapse: collapse; 
     margin: 20px 0;
-    background: white; /* White background for the div */
-    padding: 20px; /* Space inside the div, around the content */
-    margin: 20px auto; /* Space outside the div, centered horizontally */
-    width: 70%; /* Width of the div relative to the parent */
-    border-radius: 10px; /* Rounded corners */
+    background: white; 
+    padding: 20px; 
+    margin: 20px auto; 
+    width: 70%; 
+    border-radius: 10px; 
     border: 2px solid green;
 }
 
