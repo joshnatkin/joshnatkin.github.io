@@ -33,11 +33,16 @@ body{
     padding: 5px;
     background: black;
     color: blueviolet;
+    display: black;
 }
+
+
 /*Navigation*/
 
 
 /*Typography*/
-
+#main-footer p{
+    text-align: center;
+}
 
 /*Media quires*/
