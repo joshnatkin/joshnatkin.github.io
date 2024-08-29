@@ -7,7 +7,7 @@ body{
 #content{
     width: 70%;
     margin: auto;
-    background: rgb(255,255,255,0,7);
+    background: rgb(255,255,255,0.7);
     border-radius: 5px;
 
 }
@@ -46,3 +46,9 @@ body{
 }
 
 /*Media quires*/
+
+@media only screen and (min-width: 600px){
+    .columns{
+        display: flex;
+    }
+}
