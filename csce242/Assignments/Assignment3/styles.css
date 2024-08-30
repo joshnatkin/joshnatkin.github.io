@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
 }
-h1{
+
+h1 {
     text-align: center;
 }
 
@@ -13,13 +14,15 @@ h1{
     background-color: skyblue;
     padding: 10px;
 }
+
 #main-nav {
     list-style-type: none;
     display: inline-block;
     justify-content: center;
     padding: 0;
-    width: 100%
+    width: 100%;
 }
+
 #main-nav ul {
     padding-left: 0;
     list-style: none;
@@ -48,20 +51,14 @@ h1{
     justify-content: space-between;
     padding: 20px;
     margin-bottom: 100px; /* Space for the footer */
-}
-
-/*Content w boxes */
-#main-section {
-    width: 75%;
-    background: lightcyan;
-    padding: 20px;
-    border-radius: 5px;
+    align-items: stretch; /* Ensures equal height for content and aside */
 }
 
 #species {
     background: skyblue;
     padding: 5px;
     margin: 5px;
+    flex: 1; /* Allows #species to take up the main content space */
 }
 
 #news {
@@ -71,9 +68,9 @@ h1{
 }
 
 #news .one {
-    flex: 1;
-    padding: 10px;
-    box-sizing: border-box; /* padding is included in the width */
+    flex: 1 1 22%; /* Ensures four sections per row */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
 #news img {
@@ -86,6 +83,7 @@ h1{
     background: lightsalmon;
     padding: 20px;
     border-radius: 5px;
+    align-self: flex-start; /* Keeps aside aligned to the top */
 }
 
 #main-aside h2 {
