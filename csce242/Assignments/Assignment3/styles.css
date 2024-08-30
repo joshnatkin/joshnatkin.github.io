@@ -4,6 +4,14 @@ html, body {
     margin: 0;
 }
 
+h2 {
+    text-align: left;
+}
+
+h1 {
+    text-align: center; /* Center the header text on all screen sizes */
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,36 +19,21 @@ body {
 }
 
 /* Header Styles */
-h1, h3 {
-    text-align: center;
-}
-
 header {
     background-color: tan;
     padding: 10px;
 }
 
-
-#main-nav{
-    width: 100%;
-}
 #main-nav ul {
+    padding-left: 0;
+    margin: 0;
     display: flex; 
-    flex-direction: row;
-    width: 100%;
+    width: 100%; 
 }
 
 #main-nav li {
     list-style: none;
-    border-bottom: 1px solid violet;
-}
-
-#main-nav a {
-    text-decoration: none;
-    padding:5px;
-    background:black;
-    color:violet;
-    display:block;
+    flex: 1; 
 }
 
 #main-nav a {
@@ -69,13 +62,11 @@ header {
 }
 
 #main-aside {
-    width: 25%;
     background: lightcoral;
     padding: 20px;
     border-radius: 5px;
     box-sizing: border-box;
     text-align: left;
-    margin: 0;
 }
 
 #main-aside h2 {
@@ -112,6 +103,7 @@ header {
     margin-bottom: 20px;
     box-sizing: border-box;
     padding: 10px;
+    text-align: center;
 }
 
 #news img {
@@ -123,24 +115,30 @@ header {
 /* Footer Styles */
 #main-footer {
     background: tan;
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
     width: 100%;
     margin: 0;
+    padding: 20px;
+}
+
+#main-footer h2 {
+    text-align: left; /* Ensure the footer heading is left-aligned */
 }
 
 #footer-sec {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: flex-start; /* Align all content to the left */
+    width: 100%;
+    max-width: 1000px; /* Limit the maximum width */
+    margin: 0 auto; /* Center container horizontally with margin auto */
 }
 
 #footer-sec .one {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start; /* Align items at the start */
     margin: 10px 0;
-    width: 80%;
+    width: 100%;
+    max-width: 1000px; /* Limit the width of footer sections */
     box-sizing: border-box;
 }
 
@@ -154,37 +152,40 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left; /* Ensure text starts at the same point */
 }
 
 .text-content h3 {
-    text-align: left;
     margin: 0;
     margin-bottom: 10px;
 }
 
-/* Media Queries for Horizontal Layout on Smaller Screens */
-@media (max-width: 768px) {
-    /* Navbar on smaller screens */
+.text-content p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
     #main-nav ul {
         flex-direction: column; /* Stack vertically on smaller screens */
-        align-items: flex-start;
-        width: 100%;
+        align-items: stretch; /* Ensure items stretch to full width */
     }
 
-    /* News Section on smaller screens */
+    #main-nav li {
+        width: 100%; /* Ensure each list item takes full width */
+    }
+
     #news {
         flex-direction: column; /* Stack vertically on smaller screens */
-        align-items: stretch;
+        align-items: center; /* Center items horizontally */
     }
 
     #news .one {
         flex: 1 1 100%; /* Full width for each news section */
-        align-content: center;
         margin-bottom: 20px;
         padding: 10px;
     }
 
-    /* Aside on smaller screens */
     #main-content {
         flex-direction: column; /* Stack content wrapper and aside vertically */
     }
@@ -194,16 +195,20 @@ header {
         margin-top: 20px; /* Space between news and aside */
     }
 
-    /* Footer on smaller screens */
+    #main-footer h2 {
+        text-align: left; /* Ensure footer heading is left-aligned */
+    }
+
     #footer-sec {
         flex-direction: column; /* Stack vertically */
-        align-items: center;
+        align-items: flex-start; /* Align all content to the left */
     }
 
     #footer-sec .one {
         flex-direction: column; /* Stack image and text vertically */
-        align-items: center;
+        align-items: flex-start; /* Align all items to the left */
         margin: 20px 0;
+        padding-left: 0; /* Remove padding on small screens */
         width: 100%;
     }
 
@@ -211,5 +216,9 @@ header {
         margin-right: 0;
         margin-bottom: 10px;
         width: 80%; /* Adjust as needed */
+    }
+
+    header h1 {
+        text-align: center; /* Center the header text on small screens */
     }
 }
