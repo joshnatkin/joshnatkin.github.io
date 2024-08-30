@@ -50,6 +50,7 @@ h1{
     margin-bottom: 100px; /* Space for the footer */
 }
 
+/*Content w boxes */
 #main-section {
     width: 75%;
     background: lightcyan;
@@ -58,13 +59,14 @@ h1{
 }
 
 #species {
-    background: lightgreen;
+    background: skyblue;
     padding: 5px;
     margin: 5px;
 }
 
 #news {
     display: flex;
+    flex-wrap: wrap; /* Allows the news sections to wrap to the next line */
     justify-content: space-between;
 }
 
