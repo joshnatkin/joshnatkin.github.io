@@ -38,12 +38,13 @@ header {
 }
 
 #main-nav li {
-    flex: 1;
+    list-style: none;
+    border-bottom: 1px solid violet;
 }
 
 #main-nav a {
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     background: skyblue;
     color: white;
     text-align: center;
@@ -158,4 +159,9 @@ header {
     text-align: left;
     margin: 0;
     margin-bottom: 10px;
+}
+
+@media only screen and (min-width:768px) {
+    
+
 }
