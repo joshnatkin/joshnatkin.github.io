@@ -31,7 +31,15 @@ header {
 
 #main-nav a {
     text-decoration: none;
-    padding: 5px;
+    padding:5px;
+    background:black;
+    color:violet;
+    display:block;
+}
+
+#main-nav a {
+    text-decoration: none;
+    padding: 10px;
     background: skyblue;
     color: white;
     text-align: center;
@@ -94,16 +102,16 @@ header {
 }
 
 #news .one {
-    flex: 1 1 calc(25% - 20px); /* Adjust to include padding */
+    flex: 1 1 calc(25% - 20px);
     margin-bottom: 20px;
     box-sizing: border-box;
-    padding: 10px; /* Added padding */
+    padding: 10px;
 }
 
 #news img {
     max-width: 100%;
     border-radius: 5px;
-    margin-bottom: 10px; /* Reduced margin */
+    margin-bottom: 10px;
 }
 
 /* Footer Styles */
@@ -148,9 +156,53 @@ header {
     margin-bottom: 10px;
 }
 
-@media only screen and (min-width:768px) {
-    .columns {
-        display:flex;
+/* Media Queries for Horizontal Layout on Smaller Screens */
+@media (max-width: 768px) {
+    /* Navbar on smaller screens */
+    #main-nav ul {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: flex-start;
     }
 
+    /* News Section on smaller screens */
+    #news {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: stretch;
+    }
+
+    #news .one {
+        flex: 1 1 100%; /* Full width for each news section */
+        align-content: center;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    /* Aside on smaller screens */
+    #main-content {
+        flex-direction: column; /* Stack content wrapper and aside vertically */
+    }
+
+    #main-aside {
+        width: 100%; /* Full width */
+        margin-top: 20px; /* Space between news and aside */
+    }
+
+    /* Footer on smaller screens */
+    #footer-sec {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+    }
+
+    #footer-sec .one {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    #footer-sec img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 80%; /* Adjust as needed */
+    }
 }
