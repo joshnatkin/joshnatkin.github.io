@@ -1,3 +1,4 @@
+/* Global Styles */
 html, body {
     height: 100%;
     margin: 0;
@@ -9,8 +10,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header Styles */
+h1, h3 {
+    text-align: center;
+}
+
 header {
-    background-color: green;
+    background-color: tan;
     padding: 10px;
 }
 
@@ -38,33 +44,36 @@ header {
 #main-nav a {
     text-decoration: none;
     padding: 10px;
-    background: salmon;
-    color: violet;
+    background: skyblue;
+    color: white;
     text-align: center;
     display: block;
 }
 
+/* Main Content Styles */
 #main-content {
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    background: white; /* White background for the content wrapper area */
-    flex: 1; /* Allow this section to take up remaining space */
-    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    background: skyblue;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    box-sizing: border-box;
 }
 
 .content-wrapper {
-    flex: 1; /* Allow the news section to take up remaining space */
-    padding-right: 20px; /* Space between news and aside */
+    flex: 1;
+    margin-right: 20px;
 }
 
 #main-aside {
-    width: 25%; /* Adjust the width as needed */
-    background: lightsalmon; /* Salmon background for the aside */
+    width: 25%;
+    background: lightcoral;
     padding: 20px;
     border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in the element’s total width */
-    text-align: left; /* Align text to the left */
+    box-sizing: border-box;
+    text-align: left;
+    margin: 0;
 }
 
 #main-aside h2 {
@@ -86,28 +95,67 @@ header {
     color: black;
 }
 
+/* News Section Styles */
 #news {
     display: flex;
-    flex-wrap: wrap; /* Ensures the news sections wrap */
+    flex-wrap: wrap;
     justify-content: space-between;
-    background: lightblue; /* Ensure background is white for news sections */
+    background: skyblue;
+    padding: 0;
+    margin: 0;
 }
 
 #news .one {
-    flex: 1 1 22%; /* Ensures four sections per row */
+    flex: 1 1 calc(25% - 20px); /* Adjust to include padding */
     margin-bottom: 20px;
-    box-sizing: border-box; /* Padding is included in the width */
+    box-sizing: border-box;
+    padding: 10px; /* Added padding */
 }
 
 #news img {
     max-width: 100%;
     border-radius: 5px;
+    margin-bottom: 10px; /* Reduced margin */
 }
 
+/* Footer Styles */
 #main-footer {
-    background: red;
+    background: tan;
     text-align: center;
     padding: 20px;
     border-radius: 5px;
     width: 100%;
+    margin: 0;
+}
+
+#footer-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-sec .one {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#footer-sec img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content h3 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
 }
