@@ -1,16 +1,15 @@
-body {
- 
-    font-family: Arial, Helvetica, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
 }
 
-h1 {
-    text-align: center;
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Header and Navigation */
-#main-header {
+header {
     background-color: green;
     padding: 10px;
 }
@@ -45,52 +44,27 @@ h1 {
     display: block;
 }
 
-/* Content and Aside */
-#content {
+#main-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     padding: 20px;
-    margin-bottom: 100px; /* Space for the footer */
+    background: white; /* White background for the content wrapper area */
+    flex: 1; /* Allow this section to take up remaining space */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
 }
 
-/* Main Section and Boxes */
-#main-section {
-    width: 75%; /* Allocate space for aside */
-    background: lightcyan;
-    padding: 20px;
-    border-radius: 5px;
+.content-wrapper {
+    flex: 1; /* Allow the news section to take up remaining space */
+    padding-right: 20px; /* Space between news and aside */
 }
 
-#species {
-    background: skyblue;
-    padding: 5px;
-    margin: 5px;
-}
-
-#news {
-    display: flex;
-    flex-wrap: wrap; /* Ensures the news sections wrap */
-    justify-content: space-between;
-}
-
-#news .one {
-    flex: 1 1 22%; /* Ensures four sections per row */
-    margin-bottom: 20px;
-    box-sizing: border-box; /* Padding is included in the width */
-}
-
-#news img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-/* Aside */
 #main-aside {
-    width: 20%; /* Ensures that aside stays next to main-section */
-    background: lightsalmon;
+    width: 25%; /* Adjust the width as needed */
+    background: lightsalmon; /* Salmon background for the aside */
     padding: 20px;
     border-radius: 5px;
-    margin-left: 5%;
+    box-sizing: border-box; /* Include padding and border in the element’s total width */
+    text-align: left; /* Align text to the left */
 }
 
 #main-aside h2 {
@@ -112,13 +86,28 @@ h1 {
     color: black;
 }
 
-/* Footer */
+#news {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the news sections wrap */
+    justify-content: space-between;
+    background: lightblue; /* Ensure background is white for news sections */
+}
+
+#news .one {
+    flex: 1 1 22%; /* Ensures four sections per row */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Padding is included in the width */
+}
+
+#news img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
 #main-footer {
-    background: violet;
+    background: red;
     text-align: center;
     padding: 20px;
     border-radius: 5px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
