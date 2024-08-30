@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
 }
+h1{
+    text-align: center;
+}
 
 /* Header and Navigation */
 #main-header {
@@ -50,12 +53,6 @@ body {
 #main-section {
     width: 75%;
     background: lightcyan;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-#main-content {
-    background: white;
     padding: 20px;
     border-radius: 5px;
 }
