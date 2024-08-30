@@ -20,21 +20,8 @@ header {
     padding: 10px;
 }
 
-#main-nav {
-    list-style-type: none;
-    display: inline-block;
-    justify-content: center;
-    padding: 0;
-    width: 100%;
-}
-
 #main-nav ul {
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    width: 100%;
+    padding-left:0;
 }
 
 #main-nav li {
