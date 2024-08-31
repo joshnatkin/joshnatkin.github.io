@@ -12,6 +12,14 @@ h2 {
     text-align: left;
 }
 
+#header-container h2 {
+    order: 1;
+}
+
+#header-container h1 {
+    order: 2; 
+}
+
 #assignment1-link, #assignment2-link, #assignment3-link {
     text-decoration: none;
     color: #2980b9;
@@ -21,8 +29,8 @@ h2 {
 ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Use Flexbox for horizontal alignment */
-    justify-content: space-between; /* Evenly space sections */
+    display: flex; 
+    justify-content: space-between; 
 }
 
 ul li {
@@ -32,25 +40,23 @@ ul li {
 .one, .two, .three {
     background: lightblue;
     padding: 20px;
-    flex: 1; /* Ensure sections are equally sized */
-    text-align: center; /* Center-align text inside each section */
-    margin: 10px; /* Add margin between sections */
-    box-sizing: border-box; /* Include padding and borders in the element's width and height */
+    flex: 1; 
+    text-align: center; 
+    margin: 10px; 
+    box-sizing: border-box;
 }
 
 @media only screen and (max-width: 768px) {
 
     #main-content {
         display: flex;
-        flex-direction: column; /* Stack children vertically */
-        align-items: center; /* Center-align content */
+        flex-direction: column; 
+        align-items: center; 
     }
 
-    h2 {
-        order: 1; /* Move h2 below h1 */
-        margin-top: 0.5em; /* Adjust spacing if needed */
+    #header-container {
+        flex-direction: column-reverse; /* Reverse the order on small screens */
     }
-
 
    
     #main-content h1 {
@@ -63,7 +69,7 @@ ul li {
     }
 
     #main-content h1 span {
-        display: block; /* Ensure span is on its own line */
+        display: block; 
     }
 
    
@@ -76,12 +82,5 @@ ul li {
         flex-direction: column; 
         align-items: stretch; 
     }
-
-
-
-
-
-
-
 
 }
