@@ -1,0 +1,259 @@
+body{
+    margin: 0px;
+    max-width:100%;
+}
+.bold{
+    text-emphasis: bold;
+}
+/*very top right gateway*/
+#login-menu {
+    width: fit-content;
+    padding:10px;
+    position: absolute;
+    padding: 1px;
+    top: 1%;
+    right: 5%;
+  }
+
+  #login-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.4em; /* Adjust the size as needed */
+}
+
+  #login-menu ul {
+    display: flex; /* Make all li elements appear in a row */
+    padding-left: 0;
+    margin: 0;
+}
+
+#login-menu li {
+
+    color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/*Header*/
+#main-header {
+    background: black;
+}
+
+#main-img {
+    margin-right: 5px;
+}
+
+h4, h2{
+    margin-bottom: 1px;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+}
+/*(nav)red bar below Header*/
+#main-nav {
+    background-color: #73000A; /* Make the entire nav background red */
+    text-align: center; /* Center the text */
+}
+
+#main-nav ul {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#main-nav li {
+    flex-grow: 1;
+    margin: 0;
+}
+
+#main-nav a {
+    display: block; 
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+/*Super big image w inbetween (main content)*/
+#sup-big-img{
+    width: 100%;
+}
+
+#first-content h1 {
+    margin-top: -40px;
+    margin-left: 10%;
+    font-size: 3em;
+  }
+
+.inbetween{
+    display: inline-block;
+    padding: 10px;
+    background-color:#73000A;
+    color: white;
+}
+
+#first-content p{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+
+}
+/*Research-two side content*/
+#explore {
+    background-color: #73000A; /* Red background */
+    display: flex;
+    height: 500px;
+    width: 100%;
+}
+
+#explore img {
+    width: 50%; /* Image takes up the left half */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+#right-side {
+    width: 50%; /* Text takes up the right half */
+    padding: 20px; /* Add some padding to the text */
+    color: white; /* White text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+}
+
+/*your educational investment*/
+
+#education-investment {
+    text-align: center;
+    background: #ECECEC;
+    padding: 20px; /* Add padding if needed */
+}
+
+.bold {
+    color: #73000A;
+    font-size: 2.5em;
+}
+
+#education-investment p {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.tuition-link {
+    display: inline-block;
+    color: white;
+    background-color: #73000A;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 20px auto;
+}
+/*paying for school*/
+#paying-school {
+    text-align: center;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+
+#paying-school .four{
+    flex: 1 1 23%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+#paying-school p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#school img{
+    margin-bottom: 5px;
+}
+
+.under-img{
+    color: #73000A;
+}
+
+#investing-in-research {
+    background-color: black;
+    display: flex;
+    align-items: stretch; /* Make sure children stretch to the height of the section */
+    padding: 0; /* Remove padding to ensure image and text fit correctly */
+    position: relative;
+    height: 100vh; /* Adjust this value if you need a specific height */
+}
+
+#investing-in-research img {
+    width: 350px; /* Set a fixed width for the image */
+    height: 100%; /* Fill the height of the section */
+    object-fit: cover; /* Ensure the image covers the height without distortion */
+    margin-left: calc(15% - 350px); /* Shift image to the right leaving 15% black space */
+}
+
+#investing-in-research #boxxed {
+    display: flex;
+    flex-direction: column; /* Stacks the text elements vertically */
+    color: white; /* Sets the text color to white for better contrast */
+    flex: 1; /* Takes up remaining space to the right of the image */
+    padding: 20px; /* Adds padding around the text container */
+}
+
+#investing-in-research h1, 
+#investing-in-research p, 
+#investing-in-research button {
+    margin-bottom: 20px; /* Adds space between text elements */
+}
+
+#investing-in-research button {
+    background-color: #73000A;
+    color: white;
+    padding: 8px 16px; 
+    font-size: 1em; 
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+/*fuck off rq*/
+#content{
+background: white;
+}
+
+.columns-all {
+    display: flex;
+}
+
+.padding-right{
+    padding-right:30px;
+  }
+
+  /* Horizontal Navigation */
+.horizontal-nav ul {
+    padding-left: 0px;
+  }
+  
+  .horizontal-nav li {
+    list-style-type: none;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #label{
+    color: white;
+  }
+  
