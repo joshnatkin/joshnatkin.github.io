@@ -2,84 +2,82 @@ body{
     margin: 0px;
     max-width:100%;
 }
+
+#content{
+    background: white;
+ }
+    
 .bold{
     text-emphasis: bold;
 }
-/*very top right gateway*/
-#login-menu {
-    width: fit-content;
-    padding:10px;
-    position: absolute;
-    padding: 1px;
-    top: 1%;
-    right: 5%;
-  }
 
-  #login-menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.4em; /* Adjust the size as needed */
-}
-
-  #login-menu ul {
-    display: flex; /* Make all li elements appear in a row */
-    padding-left: 0;
-    margin: 0;
-}
-
-#login-menu li {
-
-    color: white;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-/*Header*/
-#main-header {
+#main-header{
     background: black;
 }
-
-#main-img {
-    margin-right: 5px;
-}
-
-h4, h2{
-    margin-bottom: 1px;
-    color: white;
-}
-
-img{
-    max-width: 100%;
-}
-/*(nav)red bar below Header*/
+/* Navigation Bar */
 #main-nav {
-    background-color: #73000A; /* Make the entire nav background red */
-    text-align: center; /* Center the text */
+    background-color: #73000A;
+    padding: 1px;
 }
 
 #main-nav ul {
     display: flex;
-    justify-content: center; /* Center the items horizontally */
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    justify-content: center;
+    list-style-type: none; 
+    width: 100%;
 }
 
 #main-nav li {
-    flex-grow: 1;
-    margin: 0;
+    flex: 1; 
+    text-align: center; 
 }
 
 #main-nav a {
-    display: block; 
-    padding: 10px;
+    display: block;
+    padding: 1px;
     color: white;
-    text-decoration: none;
+    text-decoration: none; 
+    font-size: 0.5em; 
 }
-/*Super big image w inbetween (main content)*/
+
+/* Login Menu */
+#label{
+    color: white;
+    text-decoration: underline; 
+    font-weight: bold; 
+    margin-bottom: 15px;
+}
+#login-menu {
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+
+#login-menu ul {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none; 
+}
+
+#login-menu li {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#login-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.4em; 
+}
+
 #sup-big-img{
     width: 100%;
 }
+
+/*first thing*/
 
 #first-content h1 {
     margin-top: -40px;
@@ -110,17 +108,22 @@ img{
 }
 
 #explore img {
-    width: 50%; /* Image takes up the left half */
-    object-fit: cover; /* Ensure the image covers the area */
+    width: 50%; 
+    object-fit: cover; 
 }
 
 #right-side {
-    width: 50%; /* Text takes up the right half */
-    padding: 20px; /* Add some padding to the text */
+    width: 50%; 
+    padding: 20px; 
     color: white; /* White text color */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center the text vertically */
+}
+
+#explore .button{
+    background-color: black;
+
 }
 
 /*your educational investment*/
@@ -193,8 +196,7 @@ img{
 
 #investing-in-research img {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 0; bottom: 0;
     left: 10%;
     width: 20%; 
     height: 100%; 
@@ -207,131 +209,205 @@ img{
     flex-direction: column;
     justify-content: center;
     color: white;
-    margin-left: 30%; /* Reduce this value to bring text closer to the image */
+    margin-left: 30%;
     width: 70%; /* Ensure this is wide enough for your content */
 }
 
 #investing-in-research h1, #investing-in-research p, #investing-in-research button {
     margin-bottom: 20px;
+    color: white;
 }
 
-#investing-in-research button {
+.button {
     align-self: flex-start;
     background-color: #73000A;
     color: white;
     padding: 8px 16px;
     font-size: 1em;
     border: none;
-    cursor: pointer;
     display: inline-block;
     border: 2px solid white;
-}
-
-
-/*fuck off rq*/
-#content{
-background: white;
-}
-
-.columns-all {
-    display: flex;
 }
 
 .padding-right{
     padding-right:30px;
   }
-
-  /* Horizontal Navigation */
-.horizontal-nav ul {
-    padding-left: 0px;
-  }
-  
-  .horizontal-nav li {
-    list-style-type: none;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  #label{
-    color: white;
-  }
-
-/* Main footer styling */
+/* footer */
 #main-footer {
-    background-color: #73000A; /* Ensures the background is red */
-    color: white; /* Adjust text color for contrast */
+    background-color:#73000A ;
     padding: 20px;
   }
-  
-  /* Logo section styling */
+
   #logos {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
+    justify-content: space-between; 
+    align-items: center; 
   }
   
   #logos img {
-    height: auto; /* Ensure logo scales properly */
+    max-width: 100%; 
+    height: auto; 
   }
   
   #logo-pic {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-  }
+    display: flex;  
+}
   
   #logo-pic li {
-    display: inline;
+    margin-left: 10px; 
   }
   
-  /* Links section styling */
-  #all-links {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
+  #logo-pic img {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
   }
   
-  /* Flex containers within the links section */
-  #all-links > .flex-container {
+ /* Flex container for footer links */
+#all-links {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.main-flex {
+    display:flex;
+    width:100%;
+}
+
+.flex1, .flex2, .flex3 {
     flex: 1;
-  }
-  
-  #all-links ul {
-    list-style-type: none;
+    padding: 10px;
+}
+
+#all-links h3 {
+    color: white; 
+    margin-bottom: 10px;
+}
+
+#all-links ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    padding: 0;
-  }
-  
-  /* Grid layout for links */
-  #all-links ul li {
-    margin-bottom: 10px;
-  }
-  
-  .underline {
-    font-weight: bold;
-    text-decoration: underline;
-    margin-bottom: 10px;
-  }
-  
-  /* Footer bottom section */
+}
+
+#all-links ul li {
+    margin-bottom: 5px;
+}
+
+#all-links a {
+    color: white; 
+    text-decoration: none; 
+}
   #bottom {
-    text-align: center;
-    padding-top: 10px;
+    background-color: black;
+    color: white;
+    display:flex;
+    font-size: .7em;
+  }
+
+  #bottom p {
+    padding: 10px;
+    position: relative; left: 10%;
   }
   
-  /* Adjust column layout and spacing */
-  #all-links .flex-container > ul {
-    margin: 0 20px;
-    padding: 0;
-  }
-  
-  /* Ensure proper spacing and alignment */
-  #all-links .flex-container > ul:first-of-type {
-    margin-left: 0;
-  }
+  @media only screen and (max-width: 768px){
+    #main-nav, #login-menu{
+        display: none;
+    }
+
+    #first-content h1 {
+        margin-left: 0; 
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 10%;
+        font-size: 3em;   text-align: left;
+        text-emphasis: bold;
+      }
+    
+    .inbetween{
+        background: none;
+        color: #73000A;
+    }
+
+    #first-content p {
+        margin-left: 0;  margin-right: 0;  
+        text-align: left; /* Align text to the left */
+    }
+
+    #explore {
+        flex-direction: column;
+    }
+
+    #explore img {
+        width: auto;  
+        height:50%; 
+        max-width: 100%; 
+        object-fit: cover; 
+    }
+    #right-side{
+        padding: 20px;
+    }
+
+    #paying-school{
+        flex-direction: column;
+    }
+
+    #school-img{
+        width: 90%;
+    }
+
+    #investing-in-research {
+        display: flex;
+        flex-direction: column; 
+        padding: 20px;
+        align-items: center; 
+    }
+
+    #investing-in-research img {
+        width: auto; height: auto; 
+        max-width: 100%;
+        margin-bottom: 20px; 
+        position: static; 
+    }
+
+    #investing-in-research #boxxed {
+        width: 100%; 
+        margin-left: 0; margin-right: 0; 
+    }
+
+    #all-links {
+        display: flex;
+        flex-direction: column; /* Stack all sections vertically */
+        width: 100%;
+        padding: 0;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column; /* Stack items in each flex-container vertically */
+        width: 100%;
+        padding: 0;
+    }
+
+    .flex-container div {
+        margin-bottom: 10px; 
+    }
+
+    .main-flex {
+        flex-direction: column;
+        width:100%;
+    }
+
+    #bottom {
+        flex-wrap: wrap;
+        white-space: normal;
+    }
+
+    #bottom p{
+        flex-basis:auto;
+    }
+      
+}
   
