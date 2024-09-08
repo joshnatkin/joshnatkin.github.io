@@ -6,6 +6,10 @@ body{
 #content{
     background: white;
  }
+
+ #login-menu h4{
+    color: white;
+ }
     
 .bold{
     text-emphasis: bold;
@@ -229,7 +233,7 @@ body{
     border: 2px solid white;
 }
 
-.padding-right{
+.right{
     padding-right:30px;
   }
 /* footer */
