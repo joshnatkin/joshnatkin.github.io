@@ -13,16 +13,16 @@ h2 {
 }
 
 h3  {
-text-align: center;
+    text-align: center;
 }
 
 #header-container {
     display: flex;
     flex-direction: column; /* Default vertical stacking */
-    
 }
 
-#assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link{
+#assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link,
+#project1-link, #project2-link {
     text-decoration: none;
     color: #2980b9;
     font-weight: bold;
@@ -46,6 +46,35 @@ ul li {
     text-align: center; 
     margin: 10px; 
     box-sizing: border-box;
+}
+
+.p-one, .p-two{
+    background: lightyellow;
+    padding: 20px;
+    flex: 1; 
+    text-align: center; 
+    margin: 10px; 
+    box-sizing: border-box;
+}
+
+#project1-link, #project2-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+
+#main-projects ul{
+        list-style-type: none;
+        padding: 0;
+        display: flex; 
+        justify-content: space-between; 
+
+}
+
+#main-projects ul li {
+    margin: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -75,7 +104,7 @@ ul li {
         text-align: center;
     }
 
-    #main-assignments ul {
+    #main-assignments ul, #main-projects ul {
         flex-direction: column; 
         align-items: stretch; 
     }
