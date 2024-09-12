@@ -16,3 +16,11 @@ imgRefresher.onclick = () => {
     location.reload();
 }
 
+//slider
+const square = document.getElementById('square');
+
+slider.oninput = () => {
+    const sliderValue = slider.value;
+    square.style.left = sliderValue + '%';
+};
+

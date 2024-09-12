@@ -153,9 +153,9 @@ body {
 
 .circle-link a {
     display: block;
-    text-decoration: none;
+    text-decoration: none; text-align: center;
     color: black;
-    font-size: .6em;
+    font-size: .7em;
     border: 2px solid black;
     border-radius: 3px;
     background-color: white;

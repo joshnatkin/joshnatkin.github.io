@@ -27,6 +27,11 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
+    gap: 20px;
+}
+
+#flex-container{
+    padding: 20px;
 }
 
 .box{
@@ -74,6 +79,26 @@ padding: 15px;
 
 #slida {
     background-color: tan;
+    position: relative; /* Establish relative positioning for absolute children */
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute; 
+    top: 50%;  
+    left: 0; 
+}
+
+@media only screen and (max-width: 768px){
+
+    #columns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2%;
+    }
 }
 
 

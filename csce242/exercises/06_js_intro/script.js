@@ -15,5 +15,9 @@ myButton.onclick = () => {
     document.getElementById("more").classList.add("hide");
 };
 
-//add a second button callwd say goodbye
+//Showing data from an input field
+document.getElementById("txt-first-name").onkeyup = () => {
+    const textBox =document.getElementById("text-first-name");
+    console.log("result").innerHTML = textBox.value;
+}
 
