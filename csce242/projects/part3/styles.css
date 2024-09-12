@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #f0f4f8; /* Light grayish-blue background for the page */
+}
+
+#content {
+    background-color: white;
+}
+
+#home-main-header {
+    background-color: #1e3a8a; /* Dark blue */
+    border-bottom: 2px solid #d1d5db; /* Light gray */
+    width: 100%;
+}
+
+#home-main-header h1 {
+    text-align: left;
+    font-style: bold;
+    color: white; /* White text for header */
+}
+
+/*Login nav*/
+#home-login-nav {
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+
+#home-login-nav ul {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#home-login-nav li {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#home-login-nav a {
+    color: #a9f1f4; 
+    padding: 10px;
+}
+
+/*Main full width nav*/
+#home-main-nav {
+    width: 100%;
+    background-color: #374151; /* Gray */
+}
+
+#home-main-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+
+#home-main-nav li {
+    list-style: none;
+    flex: 1;
+}
+
+#home-main-nav a {
+    text-decoration: none;
+    padding: 10px;
+    background: #60a5fa; /* Medium blue */
+    color: white;
+    text-align: center;
+    display: block;
+    border-left: 1px solid #d1d5db; /* Light gray */
+    border-right: 1px solid #d1d5db;
+}
+
+/* Footer */
+#main-footer {
+    background-color: #374151;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-footer p {
+    text-align: left;
+}
+
+#footer-img {
+    width: 35px; /* Adjust width to fit better */
+    height: 35px; /* Make the image square */
+    object-fit: contain; /* Ensure the image retains its aspect ratio */
+    margin-left: auto
+}
+
+/*Home Page*/
+.middle {
+    background-color: #93c5fd; /* Lighter blue */
+    border-bottom: 2px solid lightgray;
+    width: 100%;
+    display: flex;
+    margin-top: 3%;
+}
+
+.middle #middle-info, .middle #supa-nav {
+    width: 50%;
+}
+
+#middle-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#middle-info h1 {
+    width: 80%;
+    text-align: left;
+    color: #1e3a8a; /* Dark blue */
+}
+
+#middle-info button {
+    background-color: white;
+    color: #1e3a8a; /* Dark blue */
+    width: 30%;
+    border: 2px solid #1e3a8a; 
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#supa-nav {
+    border-left: 2px solid lightgray;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle-link img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.circle-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.circle-link a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: .6em;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#reviews {
+    background-color: #d1d5db; 
+    padding: 20px;
+}
+
+
+/* Group Main Content */
+#group-main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+#join-search {
+    display: flex;
+    justify-content: center; /* Centers the search elements horizontally */
+    gap: 40px; /* Adds space between the search bar and dropdown */
+    margin-top: 20px;
+}
+
+#group, #animal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the elements within each section */
+}
+
+#group input, #animal select {
+    width: 200px; /* Sets a consistent width for both input and dropdown */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.group-img {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Bottom Content */
+#bottom-content {
+    padding: 20px;
+}
+
+#bottom-content h2{
+    text-align: center;
+}
+
+#group-2side {
+    display: flex;
+    gap: 20px;
+}
+
+#side1, #side2 {
+    flex: 1;
+}
+
+#side1 p {
+    text-align: justify;
+}
+
+/* About Me Section */
+#about-content {
+    padding: 20px;
+    background-color: #f0f4f8; /* Light grayish-blue background */
+}
+
+#about-content h3 {
+    text-align: center;
+}
+
+.about-container {
+    display: flex; /* Re-introduce flexbox to align text and image side by side */
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #93c5fd;
+}
+
+#about-text {
+    width: 60%; /* Text takes 60% of the container width */
+    padding-right: 20px;
+}
+
+#about-text p {
+    text-align: justify;
+    color: #374151; /* Dark gray text */
+}
+
+aside {
+    width: 35%; /* Image takes 35% of the container width */
+}
+
+aside img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    background-color: #d1d5db; /* Light gray background */
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact section {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+#contact h4 {
+    color: #1e3a8a; /* Dark blue text */
+    font-weight: bold;
+}
+
+
+
