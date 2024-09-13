@@ -273,6 +273,39 @@ aside img {
     color: #1e3a8a; /* Dark blue text */
     font-weight: bold;
 }
+/*adopt*/
+
+#adopt-content{
+    padding: 20px;
+    background-color: #f0f4f8; 
+}
+ 
+#adopt-top{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+#adopt-search input{
+    width: 200px; /* Sets a consistent width for both input and dropdown */
+    padding: 10px;
+}
+
+#google-img {
+    height:800px;
+    width: 800px;
+    padding: 10px;
+}
+
+@media only screen and(max-width:768px){
+    #middle{
+    display: flex;
+    flex-wrap:flex;
+    flex-direction: column;
+    }
+}
 
 
 
