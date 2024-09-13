@@ -84,6 +84,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative; 
 }
 
 #main-footer p {
@@ -299,13 +300,73 @@ aside img {
     padding: 10px;
 }
 
-@media only screen and(max-width:768px){
-    #middle{
-    display: flex;
-    flex-wrap:flex;
-    flex-direction: column;
+@media only screen and (max-width: 768px) {
+
+    #home-login-nav {
+        display: none;
     }
+
+    #main-header {
+        text-align: center;
+    }
+
+    #home-main-nav ul {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    .middle {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .middle #middle-info,.middle #supa-nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #middle-info{
+        border-bottom:2px solid  #d1d5db;
+    }
+
+    /*Go adopt*/
+
+    #google-img {
+        width: 100%;
+    }
+
+    /*in this aboutsection can you put the picutre on top of the text add some bottom margin and center it*/
+    
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;    /* Center the content horizontally */
+        text-align: center;     /* Center the text */
+    }
+
+    aside {
+        width: 100%; /* Make the image container take the full width */
+        margin-bottom: 20px; /* Add margin to the bottom of the image */
+    }
+
+    #about-text {
+        width: 100%; /* Ensure text takes full width */
+        padding: 0;  /* Remove padding on smaller screens */
+    }
+
+    aside img {
+        width: 80%; /* Adjust the image size for smaller screens */
+        margin: 0 auto; /* Center the image */
+    }
+
+    #group-2side{
+        display: flex;
+        flex-direction: column;
+        text-align: center; align-items: center;
+    }
+
 }
+
 
 
 
