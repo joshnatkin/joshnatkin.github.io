@@ -22,7 +22,7 @@ h3  {
 }
 
 #assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link,
-#project1-link, #project2-link {
+#project1-link, #project2-link, #project3-link {
     text-decoration: none;
     color: #2980b9;
     font-weight: bold;
@@ -49,22 +49,30 @@ h3  {
 .one, .two, .three, .four {
     background: lightblue;
     padding: 20px;
-    flex-wrap: wrap; 
-    text-align: center; align-items: center;
-    margin: 10px; 
-    box-sizing: border-box;
-}
-
-.p-one, .p-two{
-    background: lightyellow;
-    padding: 20px;
-    flex: wrap; 
+    width: 500px;
+    height: 500px;;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: flex; 
     text-align: center; 
     margin: 10px; 
     box-sizing: border-box;
 }
 
-#project1-link, #project2-link {
+.p-one, .p-two, .p-three{
+    background: lightyellow;
+    padding: 20px;
+    width: 500px;
+    height: 500px;;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: flex; 
+    text-align: center; 
+    margin: 10px; 
+    box-sizing: border-box;
+}
+
+#project1-link, #project2-link, #project-3-link {
     text-decoration: none;
     color: black;
     font-weight: bold;

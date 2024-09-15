@@ -129,6 +129,7 @@ body {
     border: 2px solid #1e3a8a; 
     border-radius: 5px;
     padding: 5px;
+    text-decoration: none;
 }
 
 #supa-nav {
@@ -335,28 +336,26 @@ aside img {
     #google-img {
         width: 100%;
     }
-
-    /*in this aboutsection can you put the picutre on top of the text add some bottom margin and center it*/
     
     .about-container {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center;    /* Center the content horizontally */
-        text-align: center;     /* Center the text */
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;     
     }
 
     aside {
-        width: 100%; /* Make the image container take the full width */
-        margin-bottom: 20px; /* Add margin to the bottom of the image */
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     #about-text {
-        width: 100%; /* Ensure text takes full width */
-        padding: 0;  /* Remove padding on smaller screens */
+        width: 100%;
+        padding: 0;
     }
 
     aside img {
-        width: 80%; /* Adjust the image size for smaller screens */
-        margin: 0 auto; /* Center the image */
+        width: 80%;
+        margin: 0 auto;
     }
 
     #group-2side{
