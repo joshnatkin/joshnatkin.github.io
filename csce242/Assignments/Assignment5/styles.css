@@ -79,8 +79,9 @@ padding: 15px;
 
 #slida {
     background-color: tan;
-    position: relative; /* Establish relative positioning for absolute children */
+    position: relative;
 }
+
 
 #square {
     width: 100px;
@@ -90,6 +91,28 @@ padding: 15px;
     top: 50%;  
     left: 0; 
 }
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    background: #de3535;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    appearance: none; /* Remove default styling in other browsers */
+    width: 20px; 
+    height: 20px; 
+    background: yellow; 
+    cursor: pointer; 
+}
+
+footer{
+    text-align: center;
+    margin-top: 12%;
+}
+
 
 @media only screen and (max-width: 768px){
 

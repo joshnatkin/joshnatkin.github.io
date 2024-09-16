@@ -1,19 +1,23 @@
 body {
-    background: white;
+    background: lightgray;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em; /* Reduced font size */
 }
 
 h1 {
     color: lightgray;
     text-align: center;
+    font-size: 1.5em; /* Adjust font size */
 }
 
 h2 {
     text-align: start;
+    font-size: 1em; /* Adjust font size */
 }
 
-h3  {
+h3 {
     text-align: center;
+    font-size: 0.75em; /* Adjust font size */
 }
 
 #header-container {
@@ -21,63 +25,57 @@ h3  {
     flex-direction: column; /* Default vertical stacking */
 }
 
-#assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link,
+#assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link, #assignment5-link,
 #project1-link, #project2-link, #project3-link {
-    text-decoration: none;
-    color: #2980b9;
-    font-weight: bold;
-}
-
-#main-projects ul, #main-assignments ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex; 
-    justify-content: space-between; 
-}
-
-#main-projects ul li, #main-assignments ul li {
-    margin: 10px;
-}
-
-#main-projects ul li a, #mian-assignments ul li a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.one, .two, .three, .four {
-    background: lightblue;
-    padding: 20px;
-    width: 500px;
-    height: 500px;;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: flex; 
-    text-align: center; 
-    margin: 10px; 
-    box-sizing: border-box;
-}
-
-.p-one, .p-two, .p-three{
-    background: lightyellow;
-    padding: 20px;
-    width: 500px;
-    height: 500px;;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: flex; 
-    text-align: center; 
-    margin: 10px; 
-    box-sizing: border-box;
-}
-
-#project1-link, #project2-link, #project-3-link {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    margin-bottom: 10%;
+    font-size: 0.75em; /* Adjust font size */
 }
+
+.assignments{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* This helps in making them responsive */
+}
+
+.projects{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.assignment{
+    background-color: lightblue;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.project {
+    background-color: yellow;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ass-img, .project-img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.assignment p {
+    font-size: 10px;
+    color: black;
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -95,19 +93,20 @@ h3  {
         display: flex;
         flex-direction: column; 
         align-items: center; 
-        font-size: 1.5em; 
+        font-size: 1.125em; /* Adjust font size */
         text-align: center;
     }
 
     #main-content h1 span {
         display: block; 
     }
-   
+
     h3 {
         text-align: center;
+        font-size: 0.75em; /* Adjust font size */
     }
 
-    #main-assignments ul, #main-projects ul {
+    .assignments, .projects {
         flex-direction: column; 
         align-items: stretch; 
     }
