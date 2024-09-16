@@ -1,54 +1,61 @@
+:root {
+    --color-light-gray: lightgray;
+    --color-black: black;
+    --color-light-blue: lightblue;
+    --color-yellow: yellow;
+}
+
 body {
-    background: lightgray;
+    background: var(--color-light-gray);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75em; /* Reduced font size */
+    font-size: 0.75em;
 }
 
 h1 {
-    color: black;
+    color: var(--color-black);
     text-align: center;
-    font-size: 1.5em; /* Adjust font size */
+    font-size: 1.5em;
 }
 
 h2 {
     text-align: start;
-    font-size: 1em; /* Adjust font size */
+    font-size: 1em;
 }
 
 h3 {
     text-align: center;
-    font-size: 0.75em; /* Adjust font size */
+    font-size: 0.75em;
 }
 
 #header-container {
     display: flex;
-    flex-direction: column; /* Default vertical stacking */
+    flex-direction: column;
 }
 
 #assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link, #assignment5-link,
 #project1-link, #project2-link, #project3-link {
     text-decoration: none;
-    color: black;
+    color: var(--color-black);
     font-weight: bold;
-    font-size: 0.75em; /* Adjust font size */
+    font-size: 0.75em;
 }
 
-.assignments{
+.assignments {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap; /* This helps in making them responsive */
+    flex-wrap: wrap;
 }
 
-.projects{
+.projects {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
-.assignment{
-    background-color: lightblue;
+.assignment {
+    background-color: var(--color-light-blue);
     padding: 10px;
     width: 300px;
     text-align: center;
@@ -56,14 +63,14 @@ h3 {
 }
 
 .project {
-    background-color: yellow;
+    background-color: var(--color-yellow);
     padding: 10px;
     width: 300px;
     text-align: center;
     box-sizing: border-box;
 }
 
-.ass-img, .project-img{
+.ass-img, .project-img {
     width: 250px;
     height: 150px;
     object-fit: cover;
@@ -73,41 +80,39 @@ h3 {
 
 .assignment p {
     font-size: 10px;
-    color: black;
+    color: var(--color-black);
 }
-
-
 
 @media only screen and (max-width: 768px) {
     #header-container {
-        flex-direction: column-reverse; /* Reverse the order on small screens */
+        flex-direction: column-reverse;
     }
 
     #main-content {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     #main-content h1 {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        font-size: 1.125em; /* Adjust font size */
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.125em;
         text-align: center;
     }
 
     #main-content h1 span {
-        display: block; 
+        display: block;
     }
 
     h3 {
         text-align: center;
-        font-size: 0.75em; /* Adjust font size */
+        font-size: 0.75em;
     }
 
     .assignments, .projects {
-        flex-direction: column; 
-        align-items: stretch; 
+        flex-direction: column;
+        align-items: stretch;
     }
 }
