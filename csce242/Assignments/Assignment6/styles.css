@@ -1,55 +1,53 @@
-body{
+body {
     background-color: lightgray;
 }
 
-/*header*/
- #header{
+/* Header */
+#header {
     text-align: center;
     display: flex;
     flex-direction: column;
- }
+}
 
- #ex-nav {
+#ex-nav {
     justify-content: center;
     display: flex;
 }
 
 #ex-nav ul {
-    list-style-type: none;  /* Remove bullets */
+    list-style-type: none;
     display: flex;
     padding: 0;
     margin: 0;
-    align-items: center;    /* Center items horizontally */
+    align-items: center;
 }
 
 #ex-nav li {
-    position: relative;     /* To position the ::after pseudo-element */
-    padding: 5px 0;        /* Add space around the list item */
+    position: relative;
+    padding: 5px 0;
 }
 
-/* Add the pipe '|' between items, but not after the last one */
 #ex-nav li:not(:last-child)::after {
-    content: '|';     
-    color: #888;           
+    content: '|';
+    color: #888;
     margin-right: 2px;
 }
 
-/* Links styling */
 #ex-nav a {
     padding: 5px;
-    text-decoration: none; 
-    color: #0066cc;    
+    text-decoration: none;
+    color: #0066cc;
 }
 
-/*flex-container*/
-.container{    
-    display: flex;           
-    justify-content: center; 
-    align-items: center;  
+/* Flex container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/*color slider*/
 
-#color-slider{
+/* Color Slider */
+#color-slider {
     background-color: #A80000;
     height: 150px;
     width: 500px;
@@ -58,13 +56,14 @@ body{
 }
 
 #slider {
-    margin: 0 auto; /*centered*/
-    display: block; 
-    width: 95%;    
+    margin: 0 auto;
+    display: block;
+    width: 95%;
 }
 
 h3 {
     text-align: center;
+    color: white;
 }
 
 input[type="range"] {
@@ -78,15 +77,14 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 20px; 
-    height: 20px; 
-    background: yellow; 
-    cursor: pointer; 
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    cursor: pointer;
     border: 1px solid black;
 }
 
-/*Picture chooser*/
-
+/* Picture Chooser */
 #sizer {
     background-color: aliceblue;
     display: flex;
@@ -96,7 +94,33 @@ input[type="range"]::-webkit-slider-thumb {
     height: fit-content;
 }
 
-#sizer-header{
-margin-bottom: 5%;
+#sizer #sizer-header {
+    margin-bottom: 5%;
 }
+
+#sizer:not(#sizer-header){
+    text-align: center; /* Center aligns child elements horizontally */
+}
+
+#picture {
+    display: inline-block; /* Make sure the image is treated as an inline element */
+}
+
+#footer{
+    position: absolute;
+    left: 47%;
+    bottom: 1%;
+}
+
+@media only screen and(max-width: 768px){
+    #small-nav{
+        width: 10px;
+        height: 2px;
+        padding: 0;
+        margin: 0;
+        color: black;
+    }
+
+}
+
 

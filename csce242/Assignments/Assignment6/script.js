@@ -1,33 +1,58 @@
-// Color Slider
-document.getElementById('slider').oninput = updateBackgroundColor;
+document.getElementById("slider").oninput = (e) => {
+    let value = e.target.value;
+    let red, green, blue;
 
-function updateBackgroundColor(e) {
-    const value = e.target.value;
-    const Color = `rgb(${value}, 0, 0)`;
-    document.getElementById('color-slider').style.backgroundColor = Color;
-}
-updateBackgroundColor({ target: { value: 0 } });
+    if (value >= 0 && value <= 255) {
+        red = value;
+        green = 0;
+        blue = 0;
+    } else {
+        red = 0;
+        green = 0;
+        blue = 0;
+    }
+    const color = `rgb(${red}, ${green}, ${blue})`;
+    document.getElementById('color-slider').style.backgroundColor = color;
+};
 
 // Show Picture Function
+function showPicture(size) {
+    let width, height;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('#sizer-header button');
-    const picture = document.getElementById('picture');
+    if (size === 'small') {
+        width = 100;
+        height = 100;
+    } else if (size === 'medium') {
+        width = 300;
+        height = 300;
+    } else if (size === 'large') {
+        width = 500;
+        height = 500;
+    } else {
+        width = 600;
+        height = 400;
+    }
 
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            const size = button.getAttribute('data-size');
+    const picture = document.getElementById("picture");
+    picture.style.width = width + "px";
+    picture.style.height = height + "px";
+    picture.src = `https://picsum.photos/${width}/${height}`;
+}
 
-            let url = '';
-            if (size === 'small') {
-                url = 'https://picsum.photos/200';
-            } else if (size === 'medium') {
-                url = 'https://picsum.photos/500';
-            } else if (size === 'large') {
-                url = 'https://picsum.photos/800';
-            }
+// Event listeners for the picture size buttons
+document.querySelectorAll('#sizer button').forEach(button => {
+    button.addEventListener('click', (e) => showPicture(e.target.getAttribute('data-size')));
+});
 
-            picture.src = url;
-        });
-    });
+// Event listeners to toggle sections
+document.getElementById("exercise1-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("color-slider").style.display = "block";
+    document.getElementById("sizer").style.display = "none";
+});
+
+document.getElementById("exercise2-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("color-slider").style.display = "none";
+    document.getElementById("sizer").style.display = "block";
 });
