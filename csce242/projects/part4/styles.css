@@ -138,8 +138,13 @@ body {
     border: 2px solid var(--color-dark-blue);
     border-radius: 5px;
     padding: 5px;
-    text-decoration: none;
 }
+
+#but{
+    text-decoration: none;
+    list-style-type: none;
+}
+
 
 #supa-nav {
     border-left: 2px solid var(--color-light-gray);
@@ -155,11 +160,19 @@ body {
 }
 
 .circle-link {
+    background-color: rgb(236, 219, 219);
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
+    margin: 5px;
     box-sizing: border-box;
+    box-shadow: 7px 7px;
+    border-radius: 5%;
+}
+
+.home-img{
+    border-radius: 50%;
 }
 
 .circle-link a {
@@ -181,6 +194,7 @@ body {
     padding: 20px;
     text-align: center;
 }
+
 
 #join-search {
     display: flex;
@@ -302,6 +316,19 @@ aside img {
     height: 800px;
     width: 800px;
     padding: 10px;
+}
+
+/*images*/
+#fam-photo {
+    width: 450px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#group1-img{
+    width: 650px;
+    height: 300px;
+    border: 1px solid black;
 }
 
 @media only screen and (max-width: 768px) {

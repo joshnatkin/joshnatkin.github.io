@@ -1,18 +1,20 @@
 document.getElementById("slider").oninput = (e) => {
     let value = e.target.value;
-    let red, green, blue;
-
-    if (value >= 0 && value <= 255) {
-        red = value;
-        green = 0;
-        blue = 0;
-    } else {
-        red = 0;
-        green = 0;
-        blue = 0;
-    }
-    const color = `rgb(${red}, ${green}, ${blue})`;
+    const red = value;
+    const color = `rgb(${red}, 0, 0)`;
+    const message = document.getElementById("color-message");
     document.getElementById('color-slider').style.backgroundColor = color;
+
+    if(value < 85){
+        message.innerHTML = "light";
+    }
+    else if(value<170 ){
+        message.innerHTML= "Medium"
+    }
+    else{
+        message.innerHTML= "Dark"
+    }
+    
 };
 
 // Show Picture Function
