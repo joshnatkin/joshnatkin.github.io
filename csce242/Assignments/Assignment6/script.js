@@ -58,3 +58,34 @@ document.getElementById("exercise2-link").addEventListener("click", (e) => {
     document.getElementById("color-slider").style.display = "none";
     document.getElementById("sizer").style.display = "block";
 });
+
+//arrow
+const arrowUp = document.getElementById("arrow-up");
+const arrowDown = document.getElementById("arrow-down");
+const exNav = document.getElementById("exNav");
+const exNavList = exNav.querySelector("ul");
+
+arrowDown.addEventListener("click", () => {
+    exNav.classList.add("show");
+    arrowDown.classList.add("hidden");
+    arrowUp.classList.remove("hidden");
+});
+
+arrowUp.addEventListener("click", () => {
+    exNav.classList.remove("show");
+    arrowUp.classList.add("hidden");
+    arrowDown.classList.remove("hidden");
+});
+
+// Handle window resizing
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+        exNav.classList.add("show");
+        arrowUp.classList.add("hidden");
+        arrowDown.classList.add("hidden");
+    } else {
+        exNav.classList.remove("show");
+        arrowUp.classList.add("hidden");
+        arrowDown.classList.remove("hidden");
+    }
+});

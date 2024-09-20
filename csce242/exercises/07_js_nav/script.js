@@ -4,7 +4,7 @@ and hiding the nav items */
 document.querySelector("#toggle-nav").onclick = () => { //thish function is the event handleer(what hapeens when button is clicked)
     document.getElementById("nav-items").classList.toggle("hidden-small");
 
-};d
+};
 
 /*dont go to link destination when clicked*/ 
 

@@ -40,7 +40,7 @@ body {
     padding: 10px;
     position: absolute;
     top: 1%;
-    right: 5%;
+    right: 2%;
 }
 
 #home-login-nav ul {
@@ -99,13 +99,16 @@ body {
 
 #main-footer p {
     text-align: left;
+    margin-left: 2%;
 }
 
 #footer-img {
     width: 35px;
     height: 35px;
     object-fit: contain;
-    margin-left: auto;
+    position: absolute;
+    right: 2%;
+    bottom: 15%
 }
 
 .middle {
@@ -312,10 +315,15 @@ aside img {
     padding: 10px;
 }
 
-#google-img {
-    height: 800px;
-    width: 800px;
-    padding: 10px;
+#adopt-search{
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+#google-maps{
+ height: 600px;
+ width: 600px;
 }
 
 /*images*/
@@ -330,6 +338,18 @@ aside img {
     height: 300px;
     border: 1px solid black;
 }
+
+#face-img{
+    width:405x;
+    height: 300px;
+}
+
+#footer-img{
+    width: 35x;
+    height: 35px;
+    border-radius: 10%;
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -391,5 +411,9 @@ aside img {
         flex-direction: column;
         text-align: center; 
         align-items: center;
+    }
+    #contact{
+        display: flex;
+        flex-wrap: wrap;
     }
 }

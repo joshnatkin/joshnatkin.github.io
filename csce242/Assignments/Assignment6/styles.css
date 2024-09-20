@@ -9,31 +9,30 @@ body {
     flex-direction: column;
 }
 
-#ex-nav {
+#exNav {
     justify-content: center;
     display: flex;
 }
 
-#ex-nav ul {
+#exNav ul {
     list-style-type: none;
-    display: flex;
     padding: 0;
     margin: 0;
     align-items: center;
 }
 
-#ex-nav li {
+#exNav li {
     position: relative;
     padding: 5px 0;
 }
 
-#ex-nav li:not(:last-child)::after {
+#exNav li:not(:last-child)::after {
     content: '|';
     color: #888;
     margin-right: 2px;
 }
 
-#ex-nav a {
+#exNav a {
     padding: 5px;
     text-decoration: none;
     color: #0066cc;
@@ -106,26 +105,52 @@ input[type="range"]::-webkit-slider-thumb {
     display: inline-block; /* Make sure the image is treated as an inline element */
 }
 
-#footer{
-    position: absolute;
-    left: 47%;
-    bottom: 1%;
-}
-
-#color-message {
+#color-message{
     text-align: center;
-    color: white;
 }
 
-@media only screen and(max-width: 768px){
-    #small-nav{
-        width: 10px;
-        height: 2px;
-        padding: 0;
-        margin: 0;
-        color: black;
+#footer {
+    margin-top: 10%;
+    text-align: center;
+}
+
+/* ExNav Arrows */
+.arrows {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    #exNav {
+        justify-content: flex-start; /* Align left on mobile */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Menu initially hidden */
+    #exNav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    /* When menu is shown */
+    #exNav.show ul {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    #arrow-up, #arrow-down {
+        display: none;
+    }
+
+    #exNav ul {
+        display: flex;
     }
 
 }
-
-
