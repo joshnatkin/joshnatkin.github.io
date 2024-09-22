@@ -107,6 +107,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 #color-message{
     text-align: center;
+    color: white;
 }
 
 #footer {
@@ -141,6 +142,9 @@ input[type="range"]::-webkit-slider-thumb {
     #exNav.show ul {
         display: flex;
     }
+    #exNav li:not(:last-child)::after {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -153,4 +157,7 @@ input[type="range"]::-webkit-slider-thumb {
         display: flex;
     }
 
+    #exNav li:not(:last-child)::after {
+        display: none;
+    }
 }

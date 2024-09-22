@@ -6,13 +6,13 @@ document.getElementById("slider").oninput = (e) => {
     document.getElementById('color-slider').style.backgroundColor = color;
 
     if(value < 85){
-        message.innerHTML = "light";
+        message.innerHTML = "dark";
     }
     else if(value<170 ){
-        message.innerHTML= "Medium"
+        message.innerHTML= "Medium";
     }
     else{
-        message.innerHTML= "Dark"
+        message.innerHTML= "light";
     }
     
 };
