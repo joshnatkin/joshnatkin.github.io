@@ -32,7 +32,7 @@ h3 {
     flex-direction: column;
 }
 
-#assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link, #assignment5-link, #assignment6-link,#assignment7-link, #Assignment8-link
+#assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link, #assignment5-link, #assignment6-link,#assignment7-link, #assignment8-link,
 #project1-link, #project2-link, #project3-link, #project4-link {
     text-decoration: none;
     color: var(--color-black);
