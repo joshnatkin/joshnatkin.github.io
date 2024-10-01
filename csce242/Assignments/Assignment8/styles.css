@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+#main-header, footer{
+    text-align: center;
+    color: black;
+}
+
+#img-box{
+    background-color: paleturquoise;
+    border: 2px solid forestgreen;
+    padding:10px;
+
+}
+
+#six-imgs{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 150px;
+    height: 300px;
+    margin: 30px;
+}
+
+
+#click-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    color: darkgreen;
+}
+
+footer{
+    margin-top: 10%;
+}
+
+#cred{
+    color: black;
+}
