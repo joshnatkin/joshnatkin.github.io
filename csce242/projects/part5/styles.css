@@ -58,15 +58,11 @@ body {
     margin-right: 2px;
 }
 
-#home-login-nav a {
-    color: var(--color-green);
-    padding: 10px;
-}
 
 /* Main navigation menu */
 #home-main-nav {
     width: 100%;
-    background-color: var(--color-gray);
+    background-color: white; /* Changed background to white */
     position: relative;
 }
 
@@ -86,27 +82,31 @@ body {
 /* Navigation items */
 #nav-items {
     display: flex;
-    padding: 0;
+    justify-content: center; /* Center the items */
+    padding: 0 20px; /* Optional: Add some horizontal padding */
     margin: 0;
-    width: 100%;
+    width: 100%; /* Full width */
 }
 
 #nav-items li {
     list-style: none;
-    flex: 1;
+    margin: 5px 20px; /* Reduced margin for closer spacing */
 }
 
 #nav-items a {
     text-decoration: none;
-    padding: 10px;
-    background: var(--color-black);
-    color: var(--color-white);
+    padding: 10px 0; /* Vertically centered padding */
+    background: var(--color-white);
+    color: var(--color-black);
     text-align: center;
     display: block;
-    border-left: 1px solid var(--color-light-gray);
-    border-right: 1px solid var(--color-black);
+    font-size: 0.8em;
 }
 
+#nav-items a:hover {
+    border-bottom: 2px solid black; /* Adds a black line under the link */
+    padding-bottom: 8px; /* Optional: Adjust padding to create space for the line */
+}
 /* Footer styling */
 #main-footer {
     background-color: var(--color-gray);
@@ -133,7 +133,7 @@ body {
 
 /* Middle content section */
 .middle {
-    background-color: var(--color-white);
+    background-color: var(--color-light-grayish-blue);
     border-bottom: 2px solid var(--color-black);
     width: 100%;
     display: flex;
@@ -156,14 +156,20 @@ body {
     color: var(--color-black);
 }
 
-#middle-info button {
-    background-color: var(--color-dark-blue);
-    color: var(--color-black);
-    width: 30%;
-    border-radius: 5px;
-    padding: 5px;
-    text-decoration: none;
+#but {
+    background-color: var(--color-dark-blue); /* Set your desired blue color */
+    color: white; /* White text */
+    text-decoration: none; /* No text decoration */
     list-style-type: none;
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 1em; /* Adjust font size as needed */
+    width: 20%;
+}
+
+/* Hover effect */
+#but:hover {
+    background-color: var(--color-light-blue); /* Lighter blue on hover (you can adjust this color) */
 }
 
 /* Super navigation section */
@@ -260,7 +266,7 @@ body {
     height: auto; 
     padding: 10px;
     margin: 20px 40px; 
-    background-color: var(--color-light-grayish-blue);
+    background-color: var(--color-white);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -376,6 +382,57 @@ aside img {
     margin-bottom: 5%;
     align-items: center;
 }
+
+#adopt-filters {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--color-light-gray);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+#adopt-filters section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+
+#adopt-filters input, 
+#adopt-filters select {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    background-color: var(--color-white);
+    transition: border-color 0.3s;
+}
+
+#adopt-filters input:focus, 
+#adopt-filters select:focus {
+    border-color: var(--color-dark-blue);
+    outline: none;
+}
+
+#adopt-filters button {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#adopt-filters button:hover {
+    background-color: var(--color-light-blue);
+}
+
 
 #adopt-search input {
     width: 200px;
