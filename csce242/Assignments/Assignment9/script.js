@@ -1,10 +1,12 @@
 class Bird {
-    constructor(name, species, color, size, habitat, imageFileName) {
+    constructor(name, species, color, size, habitat, diet, behavior, imageFileName) {
         this.name = name;
         this.species = species;
         this.color = color;
         this.size = size;
         this.habitat = habitat;
+        this.diet = diet;
+        this.behavior = behavior;
         this.imageFileName = imageFileName;
     }
 
@@ -42,17 +44,19 @@ class Bird {
             <p><strong>Color:</strong> ${this.color}</p>
             <p><strong>Size:</strong> ${this.size}</p>
             <p><strong>Habitat:</strong> ${this.habitat}</p>
+            <p><strong>Diet:</strong> ${this.diet}</p>
+            <p><strong>Behavior:</strong> ${this.behavior}</p>
         `;
         birdDetails.style.display = 'flex'; // Show details in flex layout
     }
 }
 
-// Array of birds
+// Array of birds with seven character traits each
 const birds = [];
-birds.push(new Bird('Sparrow', 'Passeridae', 'Brown', 'Small', 'Urban areas', 'mockingbird.png'));
-birds.push(new Bird('Parrot', 'Psittacidae', 'Green', 'Medium', 'Tropical forests', 'cardinal.png'));
-birds.push(new Bird('Eagle', 'Accipitridae', 'Dark brown', 'Large', 'Mountains and forests', 'eagle.png'));
-birds.push(new Bird('Peacock', 'Pavo cristatus', 'Blue and green', 'Large', 'Grasslands and forests', 'bluejay.png'));
+birds.push(new Bird('Mockingbird', 'Mimus polyglottos', 'Gray', 'Medium', 'Urban and suburban areas', 'Insects and fruits', 'Mimics sounds', 'mockingbird.png'));
+birds.push(new Bird('Eagle', 'Haliaeetus leucocephalus', 'Dark brown and white', 'Large', 'Mountains and forests', 'Fish and small mammals', 'Strong vision', 'eagle.png'));
+birds.push(new Bird('Cardinal', 'Cardinalis cardinalis', 'Red', 'Small', 'Woodlands and gardens', 'Seeds and insects', 'Territorial', 'cardinal.png'));
+birds.push(new Bird('Blue Jay', 'Cyanocitta cristata', 'Blue', 'Medium', 'Forests and urban areas', 'Nuts, seeds, and insects', 'Aggressive', 'bluejay.png'));
 
 // Display birds on page load
 const birdList = document.getElementById('bird-list');
