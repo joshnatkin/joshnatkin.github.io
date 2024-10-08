@@ -1,0 +1,45 @@
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Target images with the class "ice-cream" */
+.ice-cream {
+    width: 250px;
+    height: 150px;
+    position: relative;
+}
+
+#iceCream-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flavor {
+    position: relative; /* Make sure section is relative for absolute positioning */
+    overflow: hidden; 
+    margin: 20px;
+}
+
+.flavor-name {
+    position: absolute; /* Position it absolutely within the section */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the image */
+    height: 50%; /* Take up the bottom half */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; 
+    font-weight: bold;
+    display: flex; 
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 16px;
+    opacity: 0; 
+}
+
+.flavor:hover .flavor-name {
+    opacity: 1; 
+}
+
