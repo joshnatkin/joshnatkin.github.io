@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pawsome Pet Care</title>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Pawsome Pet Care</h1>
+        <nav id="home-login-nav">
+            <a href="#"><img id="logo" <img id ="logo" src="images/pawsome-logo.png" alt="Login-icon"></a>
+        </nav>
+    </header>
+
+    <div id="home-main-nav">
+        <div id="toggle-nav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul id="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html">Go Adopt</a></li>
+                <li><a href="join-pet-group.html">Pet supplies</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="about-content">
+        <div id="adopt-top">
+            <h2>Adopting Pets Near You</h2>
+            <div id ="adopt-filters">
+                <section id="breed">
+                    <label for="dog-search">Search for Breed</label>
+                    <input id="dog-search" type="text">
+                </section>
+                <section id="chars">
+                    <p>Sort by</p>
+                    <label for="sort-options"></label>
+                    <select id="sort-options">
+                        <option value="" selected></option>
+                        <option value="age">Age</option>
+                        <option value="Low">Price: Low to High</option>
+                        <option value="High">Price: High to Low</option>
+                    </select>
+                </section>
+            </div>
+
+            <div id="animals">
+                <div id="cocker" class="dog-container">
+                    <img class="dog-img" src="images/Cocker-Baxston.png" alt="Baxter">
+                    <h4>Baxter</h4>
+                    <p>Cocker Spaniel</p>
+                    <p>3 months old</p>
+                </div>
+                <div id="doodle" class="dog-container">
+                    <img class="dog-img" src="images/puppy-Mary.png" alt="Mary">
+                    <h4>Mary</h4>
+                    <p>Golden doodle</p>
+                    <p>1 month old</p>
+                </div>
+                <div id="ausie" class="dog-container">
+                    <img class="dog-img" src="images/Ausie-Zoey.jpg" alt="Zoey">
+                    <h4>Zoey</h4>
+                    <p>Australian Shepherd</p>
+                    <p>6 weeks old</p>
+                </div>
+                <div id="Wheaten" class="dog-container">
+                    <img class="dog-img" src="images/Wheaten-Boxer.jpeg" alt="Wheaten">
+                    <h4>Moxie</h4>
+                    <p>Wheaten Terrier</p>
+                    <p>6 weeks old</p>
+                </div>
+                <div id="boxer" class="dog-container">
+                    <img class="dog-img" src="dogs/boxer-cassie.png" alt="Cassie">
+                    <h4>Cassie</h4>
+                    <p>Boxer Spaniel</p>
+                    <p>11 weeks old</p>
+                </div>
+                <div id="dal" class="dog-container">
+                    <img class="dog-img" src="dogs/dalmation-walter.jpeg" alt="Walter">
+                    <h4>Walter</h4>
+                    <p>Dalmation</p>
+                    <p>8 weeks old</p>
+                </div>
+                <div id="dane" class="dog-container">
+                    <img class="dog-img" src="dogs/Dane-Ruford.png" alt="Walter">
+                    <h4>Rufors</h4>
+                    <p>Great Dane</p>
+                    <p>15 weeks old</p>
+                </div>
+                <div id="german" class="dog-container">
+                    <img class="dog-img" src="dogs/german-snoopy.png" alt="Snoopy">
+                    <h4>Snoopy</h4>
+                    <p>German Shepherd</p>
+                    <p>5 weeks old</p>
+                </div>
+                <div id="husky" class="dog-container">
+                    <img class="dog-img" src="dogs/husky-damian.png" alt="Damian">
+                    <h4>Damian</h4>
+                    <p>Husky</p>
+                    <p>12 weeks old</p>
+                </div>
+                <div id="lab" class="dog-container">
+                    <img class="dog-img" src="dogs/lab-jodi.png" alt="Jodi">
+                    <h4>Jodi</h4>
+                    <p>Labradoodle</p>
+                    <p>14 weeks old</p>
+                </div>
+            </div>
+
+            <label id="adopt-search" for="adopt-search">Search for City</label>
+            <input  type="text">
+
+            <div id="google">
+                <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46830151.11795826!2d-119.8093025!3d44.24236485000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sus!4v1726771203611!5m2!1sen!2sus"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>        
+    </div>
+
+    <footer id="main-footer">
+        <p>Providing Pet Help for over 1 month</p>
+        <div>
+            <img id="footer-img" src="images/footer-pic.png" alt="Footer Image">
+        </div>  
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
