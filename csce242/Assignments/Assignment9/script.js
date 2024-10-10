@@ -37,7 +37,7 @@ class Bird {
     showDetails() {
         const birdDetails = document.getElementById('bird-details');
         birdDetails.innerHTML = `
-            <div class="close-btn" onclick="closeDetails()">×</div>
+            <div class="close-btn" onclick="closeDetails()">x</div>
             <h3>${this.name}</h3>
             <img src="images/${this.imageFileName}" alt="${this.name}">
             <p><strong>Species:</strong> ${this.species}</p>
