@@ -15,7 +15,7 @@
         "name": "Mary",
         "breed": "Golden Doodle",
         "age": "1 month old",
-        "img_name": "supplies/puppy-Mary.png",
+        "img_name": "puppy-Mary.png",
         "features": ["Playful", "Intelligent", "Affectionate"],
         "vaccinated": false,
         "gender": "Female"

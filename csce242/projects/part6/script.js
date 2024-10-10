@@ -55,7 +55,7 @@ async function showDetails(selectedDog) {
     // Create a close button
     const closeButton = document.createElement("span");
     closeButton.classList.add("close-btn");
-    closeButton.textContent = '×'; // Close button
+    closeButton.textContent = "x"; // Close button
     closeButton.onclick = () => closeDetails();
     dogDetails.appendChild(closeButton);
 
