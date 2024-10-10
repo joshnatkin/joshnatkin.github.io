@@ -9,7 +9,7 @@ document.querySelector("#toggle-nav").addEventListener('click', (event) => {
 
 const getDogs = async () => {
     try {
-        return (await fetch("https://Users/josh.natkin/joshnatkin.github.io/csce242/projects/part6/information.json")).json(); // Ensure your JSON file is named "dogs.json"
+        return (await fetch("https://joshnatkin.github.io/csce242/projects/part6/information.json")).json(); // Ensure your JSON file is named "dogs.json"
     } catch (error) {
         console.log(error);
     }
