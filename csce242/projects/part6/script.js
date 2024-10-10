@@ -1,3 +1,11 @@
+//hamburger
+document.querySelector("#toggle-nav").addEventListener('click', (event) => {
+    event.preventDefault();
+    const navItems = document.querySelector("#nav-items");
+    navItems.classList.toggle("show");
+}); ``
+
+//json
 document.addEventListener('DOMContentLoaded', () => {
     showDogs();
 });
@@ -48,14 +56,12 @@ const showDogs = async () => {
 // Function to show dog details in expanded section
 async function showDetails(selectedDog) {
     const dogDetails = document.getElementById('dog-expanded-section');
-
-    // Clear any previous details
     dogDetails.innerHTML = '';
 
     // Create a close button
     const closeButton = document.createElement("span");
     closeButton.classList.add("close-btn");
-    closeButton.textContent = "x"; // Close button
+    closeButton.textContent = "X"; 
     closeButton.onclick = () => closeDetails();
     dogDetails.appendChild(closeButton);
 
@@ -101,12 +107,11 @@ async function showDetails(selectedDog) {
     gender.textContent = `Dog's Gender: ${selectedDog.gender}`; 
     dogDetails.appendChild(gender);
 
-    // Show the expanded section
     dogDetails.style.display = 'flex';
 }
 
 // Function to close the details
 function closeDetails() {
     const dogDetails = document.getElementById('dog-expanded-section');
-    dogDetails.style.display = 'none'; // Hide the expanded section
+    dogDetails.style.display = 'none'; 
 }
