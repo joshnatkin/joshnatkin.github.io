@@ -304,17 +304,17 @@ body {
     text-align: left;
 }
 
-.dog-container h4 {
+.dog-h4 {
     font-size: 1.5em;
     margin: 1px;
 }
 
-.dog-container p {
+.dog-p {
     font-size: 1rem;
     margin: 2px 0; /* Minimal space between paragraphs */
 }
 
-.dog-container img {
+.dog-img {
     width: 100%; 
     height: 200px; 
     margin-bottom: 10px;
