@@ -443,6 +443,41 @@ body {
     padding: 10px;
 }
 
+#dog-expanded-section {
+    position: fixed;
+    top: 50%; /* Adjust to center vertically */
+    left: 50%; /* Adjust to center horizontally */
+    transform: translate(-50%, -50%); /* Translate to the center of the screen */
+    width: 60%;
+    height: auto; /* Set height to auto for content fit */
+    max-height: 80%; /* Max height to avoid overflow */
+    background-color: var(--color-light-grayish-blue);
+    color: black;
+    padding: 20px;
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for popup effect */
+    overflow-y: auto; /* Allow scroll if content overflows */
+}
+
+#dog-expanded-section img {
+    width: 50%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+
 #adopt-search {
     margin-top: 10%;
     display: flex;
