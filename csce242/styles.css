@@ -32,8 +32,8 @@ h3 {
     flex-direction: column;
 }
 
-#assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link, #assignment5-link, #assignment6-link,#assignment7-link, #assignment8-link, #assignment9-link,
-#project1-link, #project2-link, #project3-link, #project4-link, #project5-link {
+#assignment1-link, #assignment2-link, #assignment3-link, #assignment4-link, #assignment5-link, #assignment6-link,#assignment7-link, #assignment8-link, #assignment9-link,#assignment10-cover,
+#project1-link, #project2-link, #project3-link, #project4-link, #project5-link, #project6-cover {
     text-decoration: none;
     color: var(--color-black);
     font-weight: bold;
