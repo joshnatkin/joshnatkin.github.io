@@ -209,10 +209,69 @@ body {
     background-color: var(--color-white);
 }
 
-/* Reviews section */
-#reviews {
-    padding: 20px;
+#bottom-content h2{
+    text-align: center;
+    margin-top: 5px;
 }
+
+#bottom-content {
+    text-align: center;
+    margin: 20px auto; 
+
+}
+
+#group-2side {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    margin: 10px auto;
+}
+
+.column{
+    padding: 10px;
+}
+
+/*parallax*/
+
+.parallax {
+    height: 70vh;
+    opacity: 0.65;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* So we can center content inside */
+  }
+
+  #welcome {
+    position: absolute; /* Position relative to the parallax container */
+    top: 40%; /* Adjust this value to position vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+#start {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.home{
+    background-image: url(images/parallax-home-1.jpg);
+}
+
+.home2{
+    background-image: url(images/parallax-home-2.jpg);
+}
+
 
 /* Group join section */
 #group-main-content {
@@ -271,29 +330,6 @@ body {
     border-radius: 5px; /* Rounded corners for images */
 }
 
-
-#bottom-content h2{
-    text-align: center;
-    margin-top: 5px;
-}
-
-#bottom-content {
-    text-align: center;
-    margin: 20px auto; 
-
-}
-
-#group-2side {
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start;
-    margin: 10px auto;
-}
-
-.column{
-    padding: 10px;
-}
-
 /* About section */
 #about-content {
     padding: 10px;
@@ -315,6 +351,41 @@ body {
 #about-text {
     padding-right: 20px;
 }
+
+#reviews-contact{
+    display: flex;
+}
+
+/* Reviews section */
+#reviews {
+    flex:1;
+    padding: 20px;
+}
+
+#contact-me{
+    flex: 1;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#contact-me p, #contact-me h2{
+    color: var(--color-white);
+}
+
+#contact-me p{
+    padding: 20px 0px;
+}
+
+#submit{
+    transform: translate(-50%, -50%); 
+    margin-left: 50%;
+}
+
+
 
 /* Contact section */
 #contact {
@@ -519,47 +590,6 @@ body {
 
 #google-maps{
     width: 70%;
-}
-
-/*parallax*/
-
-.parallax {
-    height: 70vh;
-    opacity: 0.65;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; /* So we can center content inside */
-  }
-
-  #welcome {
-    position: absolute; /* Position relative to the parallax container */
-    top: 40%; /* Adjust this value to position vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    text-align: center;
-
-}
-
-#start {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-.home{
-    background-image: url(images/parallax-home-1.jpg);
-}
-
-.home2{
-    background-image: url(images/parallax-home-2.jpg);
 }
 
 /* Media queries for responsiveness */
