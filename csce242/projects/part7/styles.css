@@ -102,10 +102,6 @@ body {
     font-size: 0.8em;
 }
 
-#nav-items a:hover {
-    border-bottom: 2px solid black; 
-    padding-bottom: 8px;
-}
 /* Footer styling */
 #main-footer {
     background-color: var(--color-gray);
@@ -333,7 +329,7 @@ body {
 /* About section */
 #about-content {
     padding: 10px;
-    background-color: var(--color-light-grayish-blue);
+    background-color: var(--color-white);
 }
 
 #about-content h3 {
@@ -353,18 +349,18 @@ body {
 }
 
 #reviews-contact{
-    display: flex;
+    background-color: var(--color-white);
 }
 
 /* Reviews section */
 #reviews {
-    flex:1;
+    background-color: var(--color-light-grayish-blue);
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 #contact-me{
-    flex: 1;
-    background-color: var(--color-white);
+    background-color: var(--color-light-grayish-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -385,13 +381,25 @@ body {
     margin-left: 50%;
 }
 
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #email{
+    margin: 0 35px;
+  }
 
+  #message{
+    margin: 0 13px;
+  }
 
 /* Contact section */
 #contact {
     padding: 20px;
     background-color: var(--color-light-gray);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -673,5 +681,13 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
-
 }
+
+    @media only screen and (min-width: 769px) { /* Adjust max-width as needed for your mobile breakpoint */
+        #nav-items a:hover {
+            border-bottom: 2px solid black; 
+            padding-bottom: 8px;
+        }
+      }
+
+

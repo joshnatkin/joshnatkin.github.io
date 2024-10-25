@@ -31,12 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
         object.access_key = API_KEY; // Add the API key to the form data
         const json = JSON.stringify(object);
         resultMessage.textContent = "Sending...";
+        resultMessage.style.textAlign = "center";
 
         const httpResult = await sendEmail(json);
 
         if (httpResult && httpResult.status === 200) {
             resultMessage.textContent = "Email successfully sent";
             resultMessage.style.color = "green";
+            res
         } else {
             resultMessage.textContent = "Sorry, your email wasn't sent";
             resultMessage.style.color = "red";
