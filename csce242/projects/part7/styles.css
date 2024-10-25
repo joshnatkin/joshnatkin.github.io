@@ -364,7 +364,7 @@ body {
 
 #contact-me{
     flex: 1;
-    background-color: var(--color-black);
+    background-color: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -373,7 +373,7 @@ body {
 }
 
 #contact-me p, #contact-me h2{
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 #contact-me p{
