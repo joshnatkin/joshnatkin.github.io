@@ -40,6 +40,15 @@ h3 {
     font-size: 1em;
 }
 
+.project-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Add space between items */
+    margin-bottom: 7px;
+}
+
 .assignments {
     display: flex;
     gap: 20px;
